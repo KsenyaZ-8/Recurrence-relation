@@ -1,0 +1,7 @@
+n = int(input())
+
+recurs = [2, 1]
+for i in range(n+1):
+    if i >= 2:
+        recurs.append(recurs[i-1]+recurs[i-2])
+print(recurs[-1])
